@@ -4,7 +4,6 @@ defmodule RocketpayWeb.UsersController do
   alias Rocketpay.User
 
   def create(conn, params) do
-    # text(conn, "Welcome to the Rocketpay API")
     params
     |> Rocketpay.create_user()
     |> handle_response(conn)
