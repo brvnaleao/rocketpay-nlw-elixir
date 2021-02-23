@@ -2,7 +2,6 @@ defmodule RocketpayWeb.UsersController do
   use RocketpayWeb, :controller
 
   alias Rocketpay.User
-
   def create(conn, params) do
     params
     |> Rocketpay.create_user()
