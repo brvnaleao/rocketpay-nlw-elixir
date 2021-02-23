@@ -12,6 +12,8 @@ defmodule Rocketpay.User do
     field :email, :string
     field :password_hash, :string
     field :nickname, :string
+
+    timestamps()
   end
 
   def changeset(params) do
